@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Tường 12D5 - Trương Thị Mỹ Linh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Mali:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-red: #a4161a;
+            --light-red: #f5e6e8;
+            --accent-red: #ba181b;
+            --white: #ffffff;
+            --table-border: #e5383b;
+        }
+
+        body {
+            background-color: var(--light-red);
+            font-family: 'Mali', cursive;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .bao-tuong {
+            max-width: 900px;
+            width: 100%;
+            background: var(--white);
+            border: 10px double var(--main-red);
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(164, 22, 26, 0.2);
+            padding: 40px;
+            position: relative;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px dashed var(--main-red);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { font-family: 'Charm', cursive; color: var(--main-red); font-size: 3rem; margin: 0; }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .section-box {
+            border: 1px solid #ffccd5;
+            padding: 20px;
+            border-radius: 15px;
+            background: #fffafa;
+        }
+
+        h2 { font-family: 'Charm', cursive; color: var(--main-red); border-bottom: 2px solid var(--main-red); margin-top: 0; }
+
+        /* Style cho Thời Khóa Biểu */
+        .schedule-section {
+            grid-column: span 2;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        th, td {
+            border: 1px solid #ffccd5;
+            padding: 12px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        th {
+            background-color: var(--main-red);
+            color: white;
+            font-family: 'Charm', cursive;
+            font-size: 1.2rem;
+        }
+
+        tr:nth-child(even) { background-color: #fff5f5; }
+        tr:hover { background-color: #ffe3e3; }
+
+        .avatar-container { text-align: center; grid-column: span 2; }
+        .avatar { width: 140px; height: 140px; border-radius: 50%; border: 5px solid var(--main-red); object-fit: cover; }
+
+        .poem-section {
+            grid-column: span 2;
+            background: var(--light-red);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px dashed var(--main-red);
+            margin-top: 20px;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 35px;
+            background-color: var(--main-red);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 600px) {
+            .content-grid { grid-template-columns: 1fr; }
+            .avatar-container, .schedule-section, .poem-section { grid-column: span 1; }
+            table { font-size: 0.7rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bao-tuong">
+        <header>
+            <h1>Góc Nhỏ Mỹ Linh</h1>
+            <p style="color: var(--accent-red); font-weight: bold;">✨ Thành viên lớp 12D5 ✨</p>
+        </header>
+
+        <div class="content-grid">
+            <div class="avatar-container">
+                <img src="mylinh.jpg" alt="Mỹ Linh" class="avatar">
+                <p><strong>Trương Thị Mỹ Linh</strong></p>
+            </div>
+
+            <div class="section-box">
+                <h2>🌿 Giới Thiệu</h2>
+                <p>Mỹ Linh - một cô gái yêu màu đỏ và những điều chân thành. Hiện đang nỗ lực hết mình cho kỳ thi sắp tới dưới mái trường Nguyễn Khuyến.</p>
+            </div>
+
+            <div class="section-box">
+                <h2>🎨 Sở Thích</h2>
+                <p>❤ Nghe nhạc không lời<br>❤ Khám phá văn hóa<br>❤ Chăm sóc bản thân</p>
+            </div>
+
+            <div class="schedule-section">
+                <h2>📅 Thời Khóa Biểu Học Tập</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Thứ 2</th>
+                            <th>Thứ 3</th>
+                            <th>Thứ 4</th>
+                            <th>Thứ 5</th>
+                            <th>Thứ 6</th>
+                            <th>Thứ 7</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Toán</td>
+                            <td>Văn</td>
+                            <td>Anh</td>
+                            <td>Toán</td>
+                            <td>Văn</td>
+                            <td>Sử</td>
+                        </tr>
+                        <tr>
+                            <td>Địa</td>
+                            <td>GDCD</td>
+                            <td>Toán</td>
+                            <td>Anh</td>
+                            <td>Sử</td>
+                            <td>Địa</td>
+                        </tr>
+                        <tr>
+                            <td>Anh</td>
+                            <td>Toán</td>
+                            <td>Văn</td>
+                            <td>Địa</td>
+                            <td>Anh</td>
+                            <td>Sinh hoạt</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="poem-section">
+                <h2>📜 Góc Tâm Hồn</h2>
+                <p style="font-style: italic;">
+                    "Đỏ thắm màu hoa, đỏ cả ước mơ<br>
+                    Mỹ Linh cô gái chẳng đợi chờ<br>
+                    Tương lai rộng mở phía trước mắt<br>
+                    Vững bước tự tin, vạn ý thơ."
+                </p>
+            </div>
+        </div>
+
+        <center>
+            <a href="#" class="contact-btn">Gửi lời nhắn cho Linh</a>
+        </center>
+    </div>
+
+</body>
+</html>
